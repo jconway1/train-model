@@ -1,4 +1,3 @@
-#example comment
 set.seed(1)
 
 library(caret)
@@ -9,9 +8,9 @@ if (length(args) != 3) {
   stop("USAGE: evalate_model.R [model_type] [data_set] [target]")
 }
 
-method <- args[1]
-dataset <- args[2]
-target <- args[3]
+method <- "rf"
+dataset <- "iris"
+target <- "Species"
 
 my_data <- get(dataset)
 
